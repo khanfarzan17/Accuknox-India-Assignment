@@ -1,9 +1,30 @@
-Here are the Steps 
+Setup Instructions
+Clone the Repository
 
-1) git clone <Link of the Repo>
+Use git to clone the repository:
 
-2) npm install 
+git clone <Link of the Repo>
+Navigate to the Project Directory
 
-3) install react-icons Package 
+Change to the project directory:
 
-Project is Being made In vite + React JS 
+
+cd <project-directory>
+Install Dependencies
+
+Install the project dependencies:
+
+
+npm install
+Install react-icons Package
+
+To install the react-icons package, run:
+
+
+npm install react-icons
+Start the Development Server
+
+Start the development server to see your project in action:
+
+
+npm run dev
