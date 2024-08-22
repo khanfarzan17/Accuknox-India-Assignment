@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { useDashboard } from "../Context/DashBoradContext.jsx";
-
+import "./Dashboard.css";
 import AddWidgetForm from "./AddWidgetForm";
 import SearchBar from "./SearchBar";
-import styles from "./Dashboard.module.css";
+
 import Category from "./Category.jsx";
 
 const Dashboard = () => {
@@ -23,24 +23,21 @@ const Dashboard = () => {
   };
 
   return (
-    <div className={styles.dashboard}>
-      <header className={styles.header}>
-        <div className={styles.logo} onClick={handleLogoClick}>
+    <div className="dashboard">
+      <header className="header">
+        <div className="logo" onClick={handleLogoClick}>
           CSPM Dashboard
         </div>
-        <div className={styles.headerActions}>
+        <div className="headerActions">
           {!showAddForm && (
-            <button
-              onClick={handleAddWidgetClick}
-              className={styles.addWidgetBtn}
-            >
+            <button onClick={handleAddWidgetClick} className="addWidgetBtn">
               Add New Widget
             </button>
           )}
         </div>
       </header>
 
-      <main className={styles.mainContent}>
+      <main className="mainContent">
         <SearchBar />
 
         {showAddForm && <AddWidgetForm onClose={handleFormClose} />}
@@ -51,7 +48,7 @@ const Dashboard = () => {
           ))}
       </main>
 
-      <footer className={styles.footer}>
+      <footer className="footer">
         <p>© 2024 CSPM Dashboard</p>
       </footer>
     </div>
