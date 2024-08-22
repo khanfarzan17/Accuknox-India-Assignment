@@ -1,10 +1,9 @@
 import React, { useState } from "react";
-import { FiPlus } from "react-icons/fi"; // Import the plus icon from react-icons
-import Category from "./Category";
 import { useDashboard } from "../Context/DashBoradContext.jsx";
 import AddWidgetForm from "./AddWidgetForm";
 import SearchBar from "./SearchBar";
 import styles from "./Dashboard.module.css";
+import Category from "./Category.jsx";
 
 const Dashboard = () => {
   const { categories } = useDashboard();
@@ -18,18 +17,23 @@ const Dashboard = () => {
     setShowAddForm(false);
   };
 
+  const handleLogoClick = () => {
+    window.location.reload();
+  };
+
   return (
     <div className={styles.dashboard}>
       <header className={styles.header}>
-        <div className={styles.logo}>CSPM Dashboard</div>
+        <div className={styles.logo} onClick={handleLogoClick}>
+          CSPM Dashboard
+        </div>
         <div className={styles.headerActions}>
           {!showAddForm && (
             <button
               onClick={handleAddWidgetClick}
               className={styles.addWidgetBtn}
             >
-              Add Widget
-              <FiPlus className={styles.addIcon} />
+              Add New Widget
             </button>
           )}
         </div>
