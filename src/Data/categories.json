@@ -1,0 +1,68 @@
+[
+    {
+      "name": "CSPM Executive Dashboard",
+      "widgets": [
+        {
+          "id": 1,
+          "name": "Compliance Status",
+          "content": "Displays the current compliance status of your cloud environment, highlighting any non-compliance issues."
+        },
+        {
+          "id": 2,
+          "name": "Risk Assessment Overview",
+          "content": "Provides an overview of potential risks in your cloud infrastructure, including severity and potential impact."
+        },
+        {
+          "id": 3,
+          "name": "Vulnerability Alerts",
+          "content": "Shows recent vulnerabilities detected in your cloud services and recommended actions to mitigate them."
+        },
+        {
+          "id": 4,
+          "name": "Security Policies",
+          "content": "Lists the active security policies in your cloud environment and their current compliance status."
+        },
+        {
+          "id": 5,
+          "name": "Incident History",
+          "content": "Tracks and displays historical security incidents, including their resolution status and impact."
+        },
+        {
+          "id": 6,
+          "name": "Data Encryption Status",
+          "content": "Monitors and reports on the encryption status of your cloud-stored data and compliance with encryption standards."
+        },
+        {
+          "id": 7,
+          "name": "User Access Audit",
+          "content": "Audits user access to your cloud resources, showing who has access and any recent changes."
+        },
+        {
+          "id": 8,
+          "name": "Security Group Configurations",
+          "content": "Displays the current configurations of security groups in your cloud environment, highlighting any misconfigurations."
+        },
+        {
+          "id": 9,
+          "name": "Cloud Asset Inventory",
+          "content": "Provides a comprehensive inventory of all cloud assets, including their status and compliance with security standards."
+        },
+        {
+          "id": 10,
+          "name": "Service Health Monitoring",
+          "content": "Monitors the health of cloud services and components, showing current status and any reported issues."
+        },
+        {
+          "id": 11,
+          "name": "Compliance Reports",
+          "content": "Monitor the threats and generate some compliance reports, showing current issues related."
+        },
+        {
+          "id": 12,
+          "name": "Security Posture Assessment",
+          "content": "Assess the security posture of your cloud environment and provide recommendations for improvement."
+        }
+      ]
+    }
+  ]
+  

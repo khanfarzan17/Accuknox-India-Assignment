@@ -1,0 +1,33 @@
+.searchBar {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .searchBarInput {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .searchBarInput:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .searchResults {
+    margin-top: 10px;
+  }
+  
+  .searchResultItem {
+    padding: 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: white;
+  }
+  

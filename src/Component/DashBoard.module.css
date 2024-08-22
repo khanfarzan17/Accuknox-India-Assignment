@@ -1,0 +1,58 @@
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(240, 245, 250, 1);
+  }
+  
+  .header, .footer {
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .headerActions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .addWidgetBtn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #0275d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .addWidgetBtn:hover {
+    background-color:#5cb85c;
+  }
+  
+  .addIcon {
+    margin-right: 8px; 
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .footer {
+    text-align: center;
+  }
+  
