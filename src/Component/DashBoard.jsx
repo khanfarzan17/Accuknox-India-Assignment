@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useDashboard } from "../Context/DashBoradContext.jsx";
-import "./Dashboard.css";
+import "./Nav.css";
 import AddWidgetForm from "./AddWidgetForm";
 import SearchBar from "./SearchBar";
 
