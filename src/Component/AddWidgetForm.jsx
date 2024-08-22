@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useDashboard } from "../Context/DashBoradContext.jsx";
 import styles from "./AddWidgetForm.module.css";
-import { IoIosAdd } from "react-icons/io";
 
 const AddWidgetForm = ({ onClose }) => {
   const { addWidget } = useDashboard();
@@ -43,7 +42,7 @@ const AddWidgetForm = ({ onClose }) => {
           className={styles.formInput}
         />
         <button type="submit" className={styles.submitButton}>
-          Add Widget{" "}
+          Add
         </button>
         <button type="button" onClick={onClose} className={styles.cancelButton}>
           Cancel
