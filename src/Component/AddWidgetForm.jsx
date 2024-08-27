@@ -3,7 +3,7 @@ import { useDashboard } from "../Context/DashBoradContext.jsx";
 import styles from "./AddWidgetForm.module.css";
 
 const AddWidgetForm = ({ onClose }) => {
-  const { addWidget } = useDashboard();
+  const { addWidget, theme } = useDashboard();
   const [widgetName, setWidgetName] = useState("");
   const [widgetContent, setWidgetContent] = useState("");
   const [selectedCategory, setSelectedCategory] = useState(
@@ -22,7 +22,11 @@ const AddWidgetForm = ({ onClose }) => {
   };
 
   return (
-    <div className={styles.addWidgetForm}>
+    <div
+      className={`${styles.addWidgetForm} ${
+        theme ? styles.darkMode : styles.lightMode
+      }`}
+    >
       <h3 className={styles.formTitle}>Add New Widget</h3>
       <form onSubmit={handleSubmit} className={styles.form}>
         <input

@@ -1,59 +1,128 @@
+:root {
+  --background-color-light: rgb(245, 245, 245);
+  --background-color-dark: black;
+  --header-footer-bg-light: #fff;
+  --header-footer-bg-dark: #333;
+  --text-color-light: #000;
+  --text-color-dark: #fff;
+  --btn-bg-light: #228B22;
+  --btn-bg-dark: #DC143C;
+  --btn-hover-bg-light: #5cb85c;
+  --btn-hover-bg-dark: #d9534f;
+  --icon-size: 1.5rem; 
+}
+
 .dashboard {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    background-color: rgba(240, 245, 250, 1);
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header, .footer {
+  padding: 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dark-mode {
+  background-color: var(--background-color-dark);
+  color: var(--text-color-dark);
+}
+
+.light-mode {
+  background-color: var(--background-color-light);
+  color: var(--text-color-light);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-footer-bg-light);
+}
+
+.dark-mode .header {
+  background-color: var(--header-footer-bg-dark);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+}
+
+.addWidgetBtn {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--btn-bg-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 50px; 
+}
+
+.dark-mode .addWidgetBtn {
+  background-color: var(--btn-bg-dark);
+}
+
+.addWidgetBtn:hover {
+  background-color: var(--btn-hover-bg-light);
+}
+
+.dark-mode .addWidgetBtn:hover {
+  background-color: var(--btn-hover-bg-dark);
+}
+
+.mainContent {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer {
+  text-align: center;
+  background-color: var(--header-footer-bg-light);
+}
+
+.dark-mode .footer {
+  background-color: var(--header-footer-bg-dark);
+}
+
+
+.theme-btn-container {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.themeToggleBtn {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  font-size: var(--icon-size); 
+  transition: color 0.3s;
+}
+
+.themeToggleBtn:hover {
+  color: var(--btn-bg-light);
+}
+
+.dark-mode .themeToggleBtn:hover {
+  color: var(--btn-bg-dark);
+}
+
+.cilight{
+  color: #ffff;
   
-  .header, .footer {
-    padding: 10px 20px;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .headerActions {
-    display: flex;
-    align-items: center;
-  }
-  
-  .addWidgetBtn {
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: #fff;
-    background-color: #0275d8;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .addWidgetBtn:hover {
-    background-color:#5cb85c;
-  }
-  
-  .addIcon {
-    margin-right: 8px; 
-  }
-  
-  .mainContent {
-    flex: 1;
-    padding: 20px;
-  }
-  
-  .footer {
-    text-align: center;
-  }
-  
+}
+
+.ciblack{
+  color:#0000;
+}

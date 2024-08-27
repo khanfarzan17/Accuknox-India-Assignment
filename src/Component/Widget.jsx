@@ -4,17 +4,21 @@ import { useDashboard } from "../Context/DashBoradContext";
 import { AiOutlineClose } from "react-icons/ai";
 
 const Widget = ({ categoryName, widget }) => {
-  const { removeWidget } = useDashboard();
+  const { removeWidget, theme } = useDashboard();
 
   return (
-    <div className={styles.widget}>
-      <h4 className={styles.widgetTitle}>{widget.name}</h4>
+    <div
+      className={`${styles.widget} ${
+        theme ? styles.darkMode : styles.lightMode
+      }`}
+    >
+      <h4 className={`${styles.widgetTitle}`}>{widget.name}</h4>
       <p className={styles.widgetContent}>{widget.content}</p>
       <button
         onClick={() => removeWidget(categoryName, widget.id)}
         className={styles.widgetButton}
       >
-        <AiOutlineClose className={styles.widgetIcon} />{" "}
+        <AiOutlineClose className={styles.widgetIcon} />
       </button>
     </div>
   );

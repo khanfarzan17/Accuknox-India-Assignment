@@ -15,7 +15,7 @@
   }
   
   .searchBarInput:focus {
-    border-color: #007bff;
+    border-color: #d9534f;
     outline: none;
   }
   

@@ -3,7 +3,7 @@ import { useDashboard } from "../Context/DashBoradContext.jsx";
 import styles from "./SearchBar.module.css";
 
 const SearchBar = () => {
-  const { categories } = useDashboard();
+  const { categories, theme } = useDashboard();
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredWidgets = categories
@@ -13,7 +13,7 @@ const SearchBar = () => {
     );
 
   return (
-    <div className={styles.searchBar}>
+    <div className={`styles.searchBar ${theme ? "dark-mode" : "light-mode"}`}>
       <input
         type="text"
         placeholder="Search widgets..."
@@ -21,6 +21,7 @@ const SearchBar = () => {
         onChange={(e) => setSearchTerm(e.target.value)}
         className={styles.searchBarInput}
       />
+
       <div className={styles.widgetContainer}>
         {searchTerm && filteredWidgets.length > 0 ? (
           filteredWidgets.map((widget) => (

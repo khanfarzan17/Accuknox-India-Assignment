@@ -61,6 +61,37 @@
           "id": 12,
           "name": "Security Posture Assessment",
           "content": "Assess the security posture of your cloud environment and provide recommendations for improvement."
+        },
+
+        {
+          "id": 13,
+          "name": "Incident Response Plan",
+          "content": "Develop a comprehensive incident response plan to effectively address and manage security incidents."
+        },
+        {
+          "id": 14,
+          "name": "Compliance Audit",
+          "content": "Conduct an audit to ensure compliance with industry standards and regulations, such as GDPR or HIPAA."
+        },
+        {
+          "id": 15,
+          "name": "Vulnerability Assessment",
+          "content": "Identify and evaluate vulnerabilities in your system to strengthen your security posture."
+        },
+        {
+          "id": 16,
+          "name": "Penetration Testing",
+          "content": "Perform simulated cyber-attacks to test the effectiveness of your security defenses and identify weaknesses."
+        },
+        {
+          "id": 17,
+          "name": "Data Encryption Strategy",
+          "content": "Create a strategy for encrypting sensitive data to protect it from unauthorized access and breaches."
+        },
+        {
+          "id": 18,
+          "name": "Security Policy Management",
+          "content": "Manage and enforce security policies in your cloud environment, ensuring compliance with industry standards and regulations."
         }
       ]
     }

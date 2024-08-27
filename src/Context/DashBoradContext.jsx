@@ -5,6 +5,11 @@ const DashboardContext = createContext();
 
 export const DashboardProvider = ({ children }) => {
   const [categories, setCategories] = useState([]);
+  const [theme, setTheme] = useState(false);
+
+  const toggleTheme = () => {
+    setTheme((prevtheme) => !prevtheme);
+  };
 
   useEffect(() => {
     setCategories(categoriesData);
@@ -36,7 +41,9 @@ export const DashboardProvider = ({ children }) => {
   };
 
   return (
-    <DashboardContext.Provider value={{ categories, addWidget, removeWidget }}>
+    <DashboardContext.Provider
+      value={{ categories, addWidget, removeWidget, theme, toggleTheme }}
+    >
       {children}
     </DashboardContext.Provider>
   );
