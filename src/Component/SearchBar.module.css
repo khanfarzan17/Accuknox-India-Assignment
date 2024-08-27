@@ -30,4 +30,35 @@
     margin-bottom: 10px;
     background-color: white;
   }
-  
+
+.widgetCard {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  margin-bottom: 15px; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+
+.widgetCard:hover {
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+}
+
+
+.widgetCardTitle {
+  font-size: 1.2rem; 
+  font-weight: 600; 
+  color: #333; 
+  margin-bottom: 10px; 
+}
+
+
+.widgetCardContent {
+  font-size: 1rem; 
+  color: #666;
+  line-height: 1.5; 
+}
+
+
